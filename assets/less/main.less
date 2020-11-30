@@ -17,6 +17,7 @@ a {
 
 img {
     vertical-align: middle;
+    object-fit: contain;
 }
 
 .banner {
@@ -94,6 +95,11 @@ label,
     box-shadow: @string;
 }
 
+.abs {
+    position: absolute;
+    content: '';
+}
+
 body {
     overflow-x: hidden;
     background-position: center center;
@@ -102,16 +108,69 @@ body {
     font-family: 'Poppins', sans-serif;
 }
 
+h1 {
+    font-size: 30px;
+    color: #f0f8ff;
+    text-align: center;
+    text-transform: uppercase;
+    line-height: 1.8;
+}
+
 header {
-    background: #222222;
+    background: #2f4f4f;
+
+    .logo_part {
+        padding-top: 50%;
+        .trans(translateY(-50%));
+
+        .logo {
+            width: 100%;
+            height: 100%;
+        }
+    }
+
+
+    .date {
+        text-align: center;
+        color: #ffffff;
+
+    }
 
     ul {
         float: right;
+        padding: 10px;
+        background: #778899;
 
         li {
-            float: left;
-            a{
+            background: #778899;
 
+            a.btn {
+                .anim(0.4s);
+                padding: 8px 20px;
+                display: block;
+
+                i {
+                    color: #ffffff;
+                    font-size: 18px;
+                }
+
+                &:hover {
+                    background: #000;
+                }
+            }
+        }
+    }
+}
+
+.navigation{
+    background: #e6153e;
+    .navbar{
+        .menu{
+            .nav-item{
+                .nav-link{
+                    text-align: center;
+
+                }
             }
         }
     }
