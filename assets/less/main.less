@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+}
+
+ul,
+ol {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    vertical-align: middle;
+}
+
+.banner {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center center;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+ol,
+li,
+span,
+i,
+input,
+form,
+img,
+a,
+label,
+.navbar,
+.btn {
+    padding: 0;
+    margin: 0;
+}
+
+.banner {
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.anim (@v) {
+    -webkit-transition: @v;
+    -moz-transition: @v;
+    -ms-transition: @v;
+    -o-transition: @v;
+    transition: @v;
+}
+
+.trans(@string) {
+    -webkit-transform: @string;
+    -moz-transform: @string;
+    -ms-transform: @string;
+    -o-transform: @string;
+    transform: @string;
+}
+
+.opacity (@opacity) {
+    -webkit-opacity: @opacity;
+    -moz-opacity: @opacity;
+    opacity: @opacity;
+}
+
+.bor (@radius) {
+    -webkit-border-radius: @radius;
+    -moz-border-radius: @radius;
+    border-radius: @radius;
+
+    -moz-background-clip: padding;
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box;
+}
+
+.shadow (@string) {
+    -webkit-box-shadow: @string;
+    -moz-box-shadow: @string;
+    box-shadow: @string;
+}
+
+body {
+    overflow-x: hidden;
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: cover;
+    font-family: 'Poppins', sans-serif;
+}
+
+header {
+    background: #222222;
+
+    ul {
+        float: right;
+
+        li {
+            float: left;
+            a{
+
+            }
+        }
+    }
+}
