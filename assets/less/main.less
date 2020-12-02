@@ -138,7 +138,7 @@ header {
 
     ul {
         float: right;
-        padding: 10px;
+        padding: 10px 0;
         background: #778899;
 
         li {
@@ -154,24 +154,76 @@ header {
                     font-size: 18px;
                 }
 
+
+            }
+
+            .fb {
                 &:hover {
-                    background: #000;
+                    background: #1773EA;
+                }
+
+            }
+
+            .youtube {
+                &:hover {
+                    background: #F70000;
+                }
+
+            }
+
+            .twitter {
+                &:hover {
+                    background: #1C9CEA;
                 }
             }
         }
     }
 }
 
-.navigation{
+.navigation {
     background: #e6153e;
-    .navbar{
-        .menu{
-            .nav-item{
-                .nav-link{
-                    text-align: center;
 
+    .navbar {
+        .navbar-nav {
+            display: block;
+
+            .nav-item {
+                float: left;
+                display: block;
+                position: relative;
+                .anim(0.4s);
+
+                &::after {
+                    .abs;
+                    top: 0;
+                    right: 0;
+                    height: 100%;
+                    width: 2px;
+                    background: #222222;
+                }
+
+                .nav-link {
+                    padding: 20px 10px;
+                    .anim(0.4s);
+                    color: #ffffff;
+
+                }
+
+                &:last-child {
+                    &::after {
+                        display: none;
+                    }
+                }
+
+                &:hover {
+                    .nav-link {
+                        background: #8b0707;
+                    }
                 }
             }
         }
     }
+}
+.about{
+    
 }

@@ -150,7 +150,7 @@ header .date {
 }
 header ul {
   float: right;
-  padding: 10px;
+  padding: 10px 0;
   background: #778899;
 }
 header ul li {
@@ -169,12 +169,52 @@ header ul li a.btn i {
   color: #ffffff;
   font-size: 18px;
 }
-header ul li a.btn:hover {
-  background: #000;
+header ul li .fb:hover {
+  background: #1773EA;
+}
+header ul li .youtube:hover {
+  background: #F70000;
+}
+header ul li .twitter:hover {
+  background: #1C9CEA;
 }
 .navigation {
   background: #e6153e;
 }
-.navigation .navbar .menu .nav-item .nav-link {
-  text-align: center;
+.navigation .navbar .navbar-nav {
+  display: block;
+}
+.navigation .navbar .navbar-nav .nav-item {
+  float: left;
+  display: block;
+  position: relative;
+  -webkit-transition: 0.4s;
+  -moz-transition: 0.4s;
+  -ms-transition: 0.4s;
+  -o-transition: 0.4s;
+  transition: 0.4s;
+}
+.navigation .navbar .navbar-nav .nav-item::after {
+  position: absolute;
+  content: '';
+  top: 0;
+  right: 0;
+  height: 100%;
+  width: 2px;
+  background: #222222;
+}
+.navigation .navbar .navbar-nav .nav-item .nav-link {
+  padding: 20px 10px;
+  -webkit-transition: 0.4s;
+  -moz-transition: 0.4s;
+  -ms-transition: 0.4s;
+  -o-transition: 0.4s;
+  transition: 0.4s;
+  color: #ffffff;
+}
+.navigation .navbar .navbar-nav .nav-item:last-child::after {
+  display: none;
+}
+.navigation .navbar .navbar-nav .nav-item:hover .nav-link {
+  background: #8b0707;
 }
