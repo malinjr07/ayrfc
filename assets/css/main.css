@@ -341,3 +341,156 @@ header ul li .twitter:hover {
   background: #f8f8f8;
   padding: 90px 0;
 }
+.videos .btn_set {
+  margin-bottom: 45px;
+}
+.videos .btn_set .vid_btn {
+  padding: 10px 20px;
+  width: auto;
+  margin: 0 25px;
+  font-size: 18px;
+  font-weight: 300;
+  float: left;
+}
+.videos .btn_set .vid_btn[aria-expanded="true"] {
+  background: #e6153e;
+  border: 1px solid #e6153e;
+  color: #f1f1f1;
+}
+.videos .btn_set .vid_btn[aria-expanded="false"] {
+  color: #222222;
+  background: #f1f1f1;
+  border: 1px solid #f1f1f1;
+}
+.videos .video_pan .single-video {
+  width: 100%;
+  height: 250px;
+  -webkit-transition: 0.4s;
+  -moz-transition: 0.4s;
+  -ms-transition: 0.4s;
+  -o-transition: 0.4s;
+  transition: 0.4s;
+}
+.videos .video_pan .single-video:hover {
+  -webkit-box-shadow: 9px 10px 23px -10px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 9px 10px 23px -10px rgba(0, 0, 0, 0.75);
+  box-shadow: 9px 10px 23px -10px rgba(0, 0, 0, 0.75);
+}
+.videos .accordion-collapse {
+  border: 0;
+}
+.videos .accordion-button::after {
+  display: none;
+}
+.videos .collapsing {
+  -webkit-transition: 0.4s;
+  -moz-transition: 0.4s;
+  -ms-transition: 0.4s;
+  -o-transition: 0.4s;
+  transition: 0.4s;
+}
+.ibadat {
+  padding: 90px 0;
+}
+.ibadat .btn_set {
+  margin-bottom: 45px;
+}
+.ibadat .btn_set .filt_btn {
+  padding: 10px 20px;
+  width: auto;
+  margin: 0 25px;
+  font-size: 18px;
+  font-weight: 300;
+  float: left;
+}
+.ibadat .article_box .article {
+  background: #f8f8f8;
+  width: 100%;
+  -webkit-transition: 0.4s;
+  -moz-transition: 0.4s;
+  -ms-transition: 0.4s;
+  -o-transition: 0.4s;
+  transition: 0.4s;
+  position: relative;
+  padding: 25px 15px;
+}
+.ibadat .article_box .article .art_title {
+  margin: 15px 0;
+  padding-bottom: 15px;
+  text-align: center;
+  position: relative;
+}
+.ibadat .article_box .article .art_title::after {
+  position: absolute;
+  content: '';
+  bottom: 0;
+  width: 75%;
+  height: 2px;
+  background: #e6153e;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+.ibadat .article_box .article .art_title h4 {
+  font-size: 20px;
+  font-weight: 500;
+  color: #222222;
+  line-height: 1.8;
+}
+.ibadat .article_box .article .art_text {
+  text-align: left;
+  margin-left: 10px;
+}
+.ibadat .article_box .article .art_text p {
+  font-size: 16px;
+  font-weight: 400;
+  color: #222222;
+  line-height: 1.8;
+}
+.ibadat .article_box .article .more {
+  position: absolute;
+  bottom: 0;
+  z-index: 12;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 70px;
+  background: -moz-linear-gradient(top, rgba(255, 255, 255, 0.67) 0%, #ffffff 21%, #ffffff 100%);
+  background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(255, 255, 255, 0.67)), color-stop(21%, #ffffff), color-stop(100%, #ffffff));
+  background: -webkit-linear-gradient(top, rgba(255, 255, 255, 0.67) 0%, #ffffff 21%, #ffffff 100%);
+  background: -o-linear-gradient(top, rgba(255, 255, 255, 0.67) 0%, #ffffff 21%, #ffffff 100%);
+  background: -ms-linear-gradient(top, rgba(255, 255, 255, 0.67) 0%, #ffffff 21%, #ffffff 100%);
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0.67) 0%, #ffffff 21%, #ffffff 100%);
+}
+.ibadat .article_box .article .more a {
+  padding: 5px 10px;
+  color: #222222;
+  border: 1px solid #222222;
+  font-weight: 600;
+  font-size: 16px;
+  margin-left: 50%;
+  margin-top: 4%;
+  -webkit-transition: 0.4s;
+  -moz-transition: 0.4s;
+  -ms-transition: 0.4s;
+  -o-transition: 0.4s;
+  transition: 0.4s;
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+.ibadat .article_box .article .more a:hover {
+  background: #e6153e;
+  border: 1px solid #e6153e;
+  color: #f1f1f1;
+}
+.ibadat .article_box .article:hover {
+  -webkit-box-shadow: 9px 10px 23px -10px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 9px 10px 23px -10px rgba(0, 0, 0, 0.75);
+  box-shadow: 9px 10px 23px -10px rgba(0, 0, 0, 0.75);
+}

@@ -331,8 +331,158 @@ header {
         }
     }
 }
-.videos{
+
+.videos {
     background: #f8f8f8;
     padding: 90px 0;
-    
+
+    .btn_set {
+        margin-bottom: 45px;
+
+        .vid_btn {
+            padding: 10px 20px;
+            width: auto;
+            margin: 0 25px;
+            font-size: 18px;
+            font-weight: 300;
+            float: left;
+        }
+
+        .vid_btn[aria-expanded="true"] {
+            background: #e6153e;
+            border: 1px solid #e6153e;
+            color: #f1f1f1;
+        }
+
+        .vid_btn[aria-expanded="false"] {
+            color: #222222;
+            background: #f1f1f1;
+            border: 1px solid #f1f1f1;
+        }
+    }
+
+    .video_pan {
+        .single-video {
+            width: 100%;
+            height: 250px;
+            .anim(0.4s);
+
+            &:hover {
+                .shadow(9px 10px 23px -10px rgba(0, 0, 0, 0.75));
+            }
+        }
+
+    }
+
+    .accordion-collapse {
+        border: 0;
+    }
+
+    .accordion-button::after {
+        display: none;
+    }
+
+    .collapsing {
+        .anim(0.4s);
+    }
+}
+
+.ibadat {
+    padding: 90px 0;
+
+    .btn_set {
+        margin-bottom: 45px;
+
+        .filt_btn {
+            padding: 10px 20px;
+            width: auto;
+            margin: 0 25px;
+            font-size: 18px;
+            font-weight: 300;
+            float: left;
+        }
+    }
+
+    .article_box {
+        .article {
+            background: #f8f8f8;
+            width: 100%;
+            .anim(0.4s);
+            position: relative;
+            padding: 25px 15px;
+
+            .art_title {
+                margin: 15px 0;
+                padding-bottom: 15px;
+                text-align: center;
+                position: relative;
+
+                &::after {
+                    .abs;
+                    bottom: 0;
+                    width: 75%;
+                    height: 2px;
+                    background: #e6153e;
+                    left: 50%;
+                    .trans(translateX(-50%));
+                }
+
+                h4 {
+                    font-size: 20px;
+                    font-weight: 500;
+                    color: #222222;
+                    line-height: 1.8;
+                }
+            }
+
+            .art_text {
+                text-align: left;
+                margin-left: 10px;
+
+                p {
+                    font-size: 16px;
+                    font-weight: 400;
+                    color: #222222;
+                    line-height: 1.8;
+                }
+            }
+
+            .more {
+                position: absolute;
+                bottom: 0;
+                z-index: 12;
+                left: 0;
+                right: 0;
+                width: 100%;
+                height: 70px;
+                background: -moz-linear-gradient(top, rgba(255, 255, 255, 0.67) 0%, rgba(255, 255, 255, 1) 21%, rgba(255, 255, 255, 1) 100%);
+                background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(255, 255, 255, 0.67)), color-stop(21%, rgba(255, 255, 255, 1)), color-stop(100%, rgba(255, 255, 255, 1)));
+                background: -webkit-linear-gradient(top, rgba(255, 255, 255, 0.67) 0%, rgba(255, 255, 255, 1) 21%, rgba(255, 255, 255, 1) 100%);
+                background: -o-linear-gradient(top, rgba(255, 255, 255, 0.67) 0%, rgba(255, 255, 255, 1) 21%, rgba(255, 255, 255, 1) 100%);
+                background: -ms-linear-gradient(top, rgba(255, 255, 255, 0.67) 0%, rgba(255, 255, 255, 1) 21%, rgba(255, 255, 255, 1) 100%);
+                background: linear-gradient(to bottom, rgba(255, 255, 255, 0.67) 0%, rgba(255, 255, 255, 1) 21%, rgba(255, 255, 255, 1) 100%);
+
+                a {
+                    padding: 5px 10px;
+                    color: #222222;
+                    border: 1px solid #222222;
+                    font-weight: 600;
+                    font-size: 16px;
+                    margin-left: 50%;
+                    margin-top: 4%;
+                    .anim(0.4s);
+                    .trans(translateX(-50%));
+                    &:hover{
+                        background: #e6153e;
+                        border: 1px solid #e6153e;
+                        color: #f1f1f1;
+                    }
+                }
+            }
+
+            &:hover {
+                .shadow(9px 10px 23px -10px rgba(0, 0, 0, 0.75));
+            }
+        }
+    }
 }
