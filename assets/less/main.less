@@ -516,31 +516,70 @@ header {
 .business {
     background: #f1f1f1;
     padding: 90px 0;
-    .split{
-        .btns{
-            width: 40%;
-            float: left;
-            .split_part{
-                border: 1px solid #cccccc;
-                margin: 20px 0;
-                .split_part{
-                    .steps{
-                        width: 100%;
-                        button.tab_btn{
-                            padding: 10px 20px;
-                            text-align: center;
-                            color: #222222;
-                            font-size: 18px;
-                            line-height: 1.8;
-                            
 
-                        }
-                    }
+    .bus_btn {
+
+        .steps {
+            width: 100%;
+
+            button.tab_btn {
+                padding: 10px 20px;
+                text-align: center;
+                color: #222222;
+                width: 100%;
+                font-size: 18px;
+                line-height: 1.8;
+                .anim(0.4s);
+
+                &:hover {
+                    .shadow(9px 10px 23px -10px rgba(0, 0, 0, 0.75));
+                    background: #cccccc;
                 }
             }
         }
-        .articles{
-            width: 60%;
+    }
+
+    .articles {
+        width: 100%;
+        padding: 15px 10px;
+
+        .business_title {
+            position: relative;
+            padding-bottom: 8px;
+            margin-bottom: 16px;
+
+            &::after {
+                .abs;
+                bottom: 0;
+                left: 50%;
+                .trans(translateX(-50%));
+                width: 70%;
+                height: 2px;
+                background: #e6153e;
+            }
+
+            h4 {
+                color: #222222;
+                text-align: center;
+                line-height: 1.8;
+                font-size: 20px;
+            }
+        }
+
+        .author {
+            margin: 10px 0;
+
+            h5 {
+                font-size: 18px;
+                line-height: 1.8;
+                color: #222222;
+
+                .date {
+                    color: #e6153e;
+                    font-size: 16px;
+                    
+                }
+            }
         }
     }
 }

@@ -538,24 +538,66 @@ header ul li .twitter:hover {
   background: #f1f1f1;
   padding: 90px 0;
 }
-.business .split .btns {
-  width: 40%;
-  float: left;
-}
-.business .split .btns .split_part {
-  border: 1px solid #cccccc;
-  margin: 20px 0;
-}
-.business .split .btns .split_part .split_part .steps {
+.business .bus_btn .steps {
   width: 100%;
 }
-.business .split .btns .split_part .split_part .steps button.tab_btn {
+.business .bus_btn .steps button.tab_btn {
   padding: 10px 20px;
   text-align: center;
   color: #222222;
+  width: 100%;
   font-size: 18px;
   line-height: 1.8;
+  -webkit-transition: 0.4s;
+  -moz-transition: 0.4s;
+  -ms-transition: 0.4s;
+  -o-transition: 0.4s;
+  transition: 0.4s;
 }
-.business .split .articles {
-  width: 60%;
+.business .bus_btn .steps button.tab_btn:hover {
+  -webkit-box-shadow: 9px 10px 23px -10px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 9px 10px 23px -10px rgba(0, 0, 0, 0.75);
+  box-shadow: 9px 10px 23px -10px rgba(0, 0, 0, 0.75);
+  background: #cccccc;
+}
+.business .articles {
+  width: 100%;
+  padding: 15px 10px;
+}
+.business .articles .business_title {
+  position: relative;
+  padding-bottom: 8px;
+  margin-bottom: 16px;
+}
+.business .articles .business_title::after {
+  position: absolute;
+  content: '';
+  bottom: 0;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+  transform: translateX(-50%);
+  width: 70%;
+  height: 2px;
+  background: #e6153e;
+}
+.business .articles .business_title h4 {
+  color: #222222;
+  text-align: center;
+  line-height: 1.8;
+  font-size: 20px;
+}
+.business .articles .author {
+  margin: 10px 0;
+}
+.business .articles .author h5 {
+  font-size: 18px;
+  line-height: 1.8;
+  color: #222222;
+}
+.business .articles .author h5 .date {
+  color: #e6153e;
+  font-size: 16px;
 }
