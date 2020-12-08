@@ -77,6 +77,9 @@ img {
   vertical-align: middle;
   object-fit: contain;
 }
+textarea {
+  resize: none;
+}
 .banner {
   background-repeat: no-repeat;
   background-size: cover;
@@ -691,10 +694,131 @@ header ul li .twitter:hover {
   padding: 90px 0;
 }
 .publish .books {
-  margin: 30px 0;
+  background: #969595;
+  margin-bottom: 30px;
   width: 100%;
-  height: auto;
+  height: 400px;
+  display: flex;
+  overflow: hidden;
+  position: relative;
+  justify-content: center;
+  -webkit-transition: 0.4s;
+  -moz-transition: 0.4s;
+  -ms-transition: 0.4s;
+  -o-transition: 0.4s;
+  transition: 0.4s;
 }
 .publish .books img {
+  -webkit-transition: 0.4s;
+  -moz-transition: 0.4s;
+  -ms-transition: 0.4s;
+  -o-transition: 0.4s;
+  transition: 0.4s;
   height: 100%;
+}
+.publish .books .details {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: rgba(240, 248, 255, 0.7);
+  top: 0;
+  -webkit-transform: scale(0);
+  -moz-transform: scale(0);
+  -ms-transform: scale(0);
+  -o-transform: scale(0);
+  transform: scale(0);
+  -webkit-transition: 0.4s;
+  -moz-transition: 0.4s;
+  -ms-transition: 0.4s;
+  -o-transition: 0.4s;
+  transition: 0.4s;
+  text-align: center;
+}
+.publish .books .details .book {
+  text-align: center;
+  width: 100%;
+  display: block;
+  position: absolute;
+  font-size: 30px;
+  color: #e6153e;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.publish .books:hover img {
+  -webkit-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  -o-transform: scale(1.1);
+  transform: scale(1.1);
+}
+.publish .books:hover .details {
+  -webkit-transform: scale(1);
+  -moz-transform: scale(1);
+  -ms-transform: scale(1);
+  -o-transform: scale(1);
+  transform: scale(1);
+}
+.form {
+  padding: 90px 0;
+  background: #f1f1f1;
+}
+.form .btn {
+  padding: 15px 30px;
+  color: #e6153e;
+  background: #ffffff;
+  border: 1px solid #222222;
+  -webkit-transition: 0.4s;
+  -moz-transition: 0.4s;
+  -ms-transition: 0.4s;
+  -o-transition: 0.4s;
+  transition: 0.4s;
+}
+.form .btn:hover {
+  color: #f1f1f1;
+  background: #e6153e;
+  border: 1px solid #e6153e;
+}
+footer {
+  padding: 90px 0;
+  background: rgba(33, 33, 33, 0.7);
+  color: #f1f1f1;
+}
+footer h4 {
+  margin-bottom: 30px;
+  color: #ffffff;
+  text-decoration: underline;
+  font-size: 24px;
+}
+footer .first_sec form {
+  margin-bottom: 30px;
+}
+footer .first_sec form button,
+footer .first_sec form input {
+  padding: 5px;
+  background: #ffffff;
+  border-radius: 10px;
+  border: 1px solid #ffffff;
+  font-size: 14px;
+  -webkit-transition: 0.4s;
+  -moz-transition: 0.4s;
+  -ms-transition: 0.4s;
+  -o-transition: 0.4s;
+  transition: 0.4s;
+}
+footer .first_sec form button {
+  color: #e6153e;
+}
+footer .first_sec form button:hover {
+  background: #e6153e;
+  border: 1px solid #e6153e;
+  color: #ffffff;
+}
+footer .first_sec .mail {
+  color: #ffffff;
+  font-size: 20px;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+footer .first_sec .mail:hover {
+  text-decoration: underline;
 }
