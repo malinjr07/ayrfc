@@ -167,6 +167,9 @@ h1 {
   line-height: 1.8;
   font-weight: 600;
 }
+.p90 {
+  padding: 90px 0;
+}
 header {
   background: #2f4f4f;
 }
@@ -188,8 +191,9 @@ header .date {
 }
 header ul {
   float: right;
-  padding: 10px 0;
+  padding: 15px 0;
   background: #778899;
+  height: 100%;
 }
 header ul li {
   background: #778899;
@@ -218,7 +222,7 @@ header ul li .twitter:hover {
 }
 .navigation {
   position: absolute;
-  top: 146px;
+  top: 18.3%;
   left: 0;
   right: 0;
   background: #e6153e;
@@ -407,7 +411,7 @@ header ul li .twitter:hover {
 .ibadat .btn_set .filt_btn {
   padding: 10px 20px;
   width: auto;
-  margin: 0 25px;
+  margin: 0 15px;
   font-size: 18px;
   font-weight: 300;
   float: left;
@@ -425,6 +429,14 @@ header ul li .twitter:hover {
   -webkit-box-shadow: 9px 10px 23px -10px rgba(0, 0, 0, 0.75);
   -moz-box-shadow: 9px 10px 23px -10px rgba(0, 0, 0, 0.75);
   box-shadow: 9px 10px 23px -10px rgba(0, 0, 0, 0.75);
+}
+.ibadat .business_set .filt_btn:first-child,
+.ibadat .btn_set .filt_btn:first-child {
+  margin-left: 0;
+}
+.ibadat .business_set .filt_btn:last-child,
+.ibadat .btn_set .filt_btn:last-child {
+  margin-right: 0;
 }
 .ibadat .business_set .active.filt_btn,
 .ibadat .btn_set .active.filt_btn {
@@ -530,7 +542,7 @@ header ul li .twitter:hover {
 .ibadat .article_box .article .more a:hover {
   background: #e6153e;
   border: 1px solid #e6153e;
-  color: #f1f1f1;
+  color: #ffffff;
 }
 .ibadat .article_box .article:hover {
   -webkit-box-shadow: 9px 10px 23px -10px rgba(0, 0, 0, 0.75);
@@ -770,6 +782,7 @@ header ul li .twitter:hover {
 }
 .form .btn {
   padding: 15px 30px;
+  margin-top: 15px;
   color: #e6153e;
   background: #ffffff;
   border: 1px solid #e6153e;
@@ -939,4 +952,163 @@ footer .rights {
   left: 0;
   width: 100%;
   z-index: 123;
+}
+@media (max-width: 575.98px) {
+  a {
+    text-decoration: none;
+  }
+  h1 {
+    font-size: 18px;
+    line-height: 1.3;
+  }
+  .h3,
+  h3 {
+    font-size: 1.5rem;
+  }
+  .p90 {
+    padding: 40px 0;
+  }
+  header {
+    padding-top: 10px;
+  }
+  header .logo_part {
+    display: none;
+  }
+  header .name {
+    margin: 10px 0;
+  }
+  header .date {
+    font-size: 12px;
+  }
+  header ul {
+    width: 30%;
+    margin-left: 50%;
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    transform: translateX(-50%);
+    float: none;
+    padding: 10px 0;
+  }
+  header ul li {
+    float: left;
+    width: 33%;
+  }
+  header ul li a.btn {
+    padding: 8px 12px;
+  }
+  .navigation {
+    top: 20%;
+  }
+  .navigation .container-fluid {
+    padding: 0;
+  }
+  .navigation .navbar .navbar-nav .nav-item .nav-link {
+    text-align: center;
+    padding: 12px 4px;
+    font-size: 12px;
+  }
+  .fixed-header {
+    top: 0;
+  }
+  .about {
+    padding-bottom: 30px;
+  }
+  .about h3 {
+    font-size: 22px;
+  }
+  .about p {
+    font-size: 14px;
+  }
+  .title::before {
+    width: 16%;
+  }
+  .study .book {
+    height: 240px;
+    width: 100%;
+  }
+  .study .book .book_img {
+    width: 100%;
+    height: 160px;
+    margin-bottom: 15px;
+  }
+  .study .book .book_text {
+    padding-bottom: 0;
+  }
+  .study .book .book_text h4 {
+    font-size: 14px;
+  }
+  .ibadat .business_set,
+  .ibadat .btn_set {
+    margin-bottom: 15px;
+  }
+  .ibadat .business_set .filt_btn,
+  .ibadat .btn_set .filt_btn {
+    padding: 5px 10px;
+    margin: 10px;
+    font-size: 14px;
+  }
+  .ibadat .article_box .article {
+    padding: 20px 10px;
+  }
+  .ibadat .article_box .article .art_title {
+    margin-bottom: 15px;
+    padding-bottom: 15px;
+  }
+  .ibadat .article_box .article .art_title h4 {
+    font-size: 14px;
+  }
+  .ibadat .article_box .article .art_text p {
+    font-size: 12px;
+  }
+  .business .bus_btn {
+    border: 0;
+    margin-top: 0;
+  }
+  .business .bus_btn .steps {
+    float: left;
+    width: auto;
+  }
+  .business .accordion-item {
+    margin-top: 25px;
+  }
+  .business .articles .business_title h4 {
+    font-size: 16px;
+  }
+  .business .articles .author h5 {
+    font-size: 14px;
+  }
+  .business .articles .author h5 .date {
+    font-size: 10px;
+  }
+  .business .articles .business_text p {
+    font-size: 12px;
+  }
+  .form .btn {
+    padding: 8px 14px;
+  }
+  footer {
+    padding-top: 40px;
+  }
+  footer h4 {
+    margin-bottom: 20px;
+    font-size: 18px;
+  }
+  footer .first_sec,
+  footer .second_sec,
+  footer .last_sec {
+    margin-top: 15px;
+  }
+  footer .first_sec .mail {
+    font-size: 14px;
+    margin-left: 25%;
+  }
+  footer .first_sec form {
+    margin-bottom: 10px;
+  }
+  footer .last_sec .pic_set .pics {
+    width: 26%;
+    height: 55px;
+  }
 }

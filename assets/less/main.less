@@ -148,6 +148,10 @@ h1 {
     font-weight: 600;
 }
 
+.p90 {
+    padding: 90px 0;
+}
+
 header {
     background: #2f4f4f;
 
@@ -170,8 +174,9 @@ header {
 
     ul {
         float: right;
-        padding: 10px 0;
+        padding: 15px 0;
         background: #778899;
+        height: 100%;
 
         li {
             background: #778899;
@@ -214,7 +219,7 @@ header {
 
 .navigation {
     position: absolute;
-    top: 146px;
+    top: 18.3%;
     left: 0;
     right: 0;
     background: #e6153e;
@@ -296,7 +301,7 @@ header {
 }
 
 .study {
-    padding: 90px 0;
+    .p90;
 
     .book {
         padding: 20px;
@@ -342,7 +347,7 @@ header {
 
 .videos {
     background: #f8f8f8;
-    padding: 90px 0;
+    .p90;
 
     .btn_set {
         margin-bottom: 45px;
@@ -396,7 +401,7 @@ header {
 }
 
 .ibadat {
-    padding: 90px 0;
+    .p90;
 
     .business_set,
     .btn_set {
@@ -405,7 +410,7 @@ header {
         .filt_btn {
             padding: 10px 20px;
             width: auto;
-            margin: 0 25px;
+            margin: 0 15px;
             font-size: 18px;
             font-weight: 300;
             float: left;
@@ -416,6 +421,14 @@ header {
 
             &:hover {
                 .shadow(9px 10px 23px -10px rgba(0, 0, 0, 0.75));
+            }
+
+            &:first-child {
+                margin-left: 0;
+            }
+
+            &:last-child {
+                margin-right: 0;
             }
         }
 
@@ -526,7 +539,7 @@ header {
 
 .business {
     background: #f1f1f1;
-    padding: 90px 0;
+    .p90;
 
     .bus_btn {
         border: 1px solid #222222;
@@ -557,7 +570,6 @@ header {
             }
 
             button.tab_btn[aria-expanded="true"] {
-
                 color: #f1f1f1;
                 background: #e6153e;
             }
@@ -671,7 +683,7 @@ header {
 }
 
 .publish {
-    padding: 90px 0;
+    .p90;
 
     .books {
         background: #969595;
@@ -724,11 +736,12 @@ header {
 }
 
 .form {
-    padding: 90px 0;
+    .p90;
     background: #f1f1f1;
 
     .btn {
         padding: 15px 30px;
+        margin-top: 15px;
         color: #e6153e;
         background: #ffffff;
         border: 1px solid #e6153e;
@@ -909,6 +922,234 @@ footer {
     position: fixed;
     top: 0;
     left: 0;
-    width: 100%; 
+    width: 100%;
     z-index: 123;
 }
+
+// Extra small devices (portrait phones, less than 576px)
+@media (max-width: 575.98px) {
+    a {
+        text-decoration: none;
+    }
+
+    h1 {
+        font-size: 18px;
+        line-height: 1.3;
+    }
+
+    .h3,
+    h3 {
+        font-size: 1.5rem;
+    }
+
+    .p90 {
+        padding: 40px 0;
+    }
+
+    header {
+        padding-top: 10px;
+
+        .logo_part {
+            display: none;
+        }
+
+        .name {
+            margin: 10px 0;
+        }
+
+        .date {
+            font-size: 12px;
+        }
+
+        ul {
+            width: 30%;
+            margin-left: 50%;
+            .trans(translateX(-50%));
+            float: none;
+            padding: 10px 0;
+
+            li {
+                float: left;
+                width: 33%;
+
+                a.btn {
+                    padding: 8px 12px;
+                }
+            }
+        }
+
+    }
+
+    .navigation {
+        top: 20%;
+
+        .container-fluid {
+            padding: 0;
+        }
+
+        .navbar .navbar-nav {
+            .nav-item .nav-link {
+                text-align: center;
+                padding: 12px 4px;
+                font-size: 12px;
+            }
+        }
+    }
+
+    .fixed-header {
+        top: 0;
+    }
+
+    .about {
+        padding-bottom: 30px;
+
+        h3 {
+            font-size: 22px;
+        }
+
+        p {
+            font-size: 14px;
+        }
+    }
+
+    .title::before {
+        width: 16%;
+    }
+
+    .study {
+
+        .book {
+            height: 240px;
+            width: 100%;
+
+            .book_img {
+                width: 100%;
+                height: 160px;
+                margin-bottom: 15px;
+            }
+
+            .book_text {
+                padding-bottom: 0;
+
+                h4 {
+                    font-size: 14px;
+
+                }
+            }
+        }
+    }
+
+    .ibadat {
+
+        .business_set,
+        .btn_set {
+            margin-bottom: 15px;
+
+            .filt_btn {
+                padding: 5px 10px;
+                margin: 10px;
+                font-size: 14px;
+            }
+        }
+
+        .article_box {
+            .article {
+                padding: 20px 10px;
+
+                .art_title {
+                    margin-bottom: 15px;
+                    padding-bottom: 15px;
+
+                    h4 {
+                        font-size: 14px;
+                    }
+                }
+
+                .art_text p {
+                    font-size: 12px;
+                }
+            }
+        }
+    }
+
+    .business {
+        .bus_btn {
+            border: 0;
+            margin-top: 0;
+
+            .steps {
+                float: left;
+                width: auto;
+            }
+        }
+
+        .accordion-item {
+            margin-top: 25px;
+        }
+
+        .articles {
+            .business_title h4 {
+                font-size: 16px;
+            }
+
+            .author h5 {
+                font-size: 14px;
+
+                .date {
+                    font-size: 10px;
+                }
+            }
+
+            .business_text p {
+                font-size: 12px;
+            }
+        }
+    }
+
+    .form .btn {
+        padding: 8px 14px;
+    }
+
+    footer {
+        padding-top: 40px;
+
+        h4 {
+            margin-bottom: 20px;
+            font-size: 18px;
+        }
+
+        .first_sec,
+        .second_sec,
+        .last_sec {
+            margin-top: 15px;
+        }
+
+        .first_sec {
+            .mail {
+                font-size: 14px;
+                margin-left: 25%;
+            }
+
+            form {
+                margin-bottom: 10px;
+            }
+        }
+
+        .last_sec .pic_set .pics {
+            width: 26%;
+            height: 55px;
+        }
+    }
+}
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) and (max-width: 767.98px) {}
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) and (max-width: 991.98px) {}
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) and (max-width: 1199.98px) {}
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {}
